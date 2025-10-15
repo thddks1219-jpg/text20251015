@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>             <!-- html5 doctype을 선언-->
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>T.G.I.F  화곡점 직원 공고</title> <!-- 완성된 이미지를 보고 알맞은 타이틀을 입력 -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css"> <!-- reset.css 파일 제작 -->
+		<style>
+			/* 주석을 3개 이상 작성해 주세요. */
+					
+			/* wrapper영역 큰테두리*/		
+			#wrapper{outline:3px solid black; background:url(images/bg.jpg); width:600px; height:500px; margin:50px auto; position:relative;}
+			
+			/* main영역 파란박스*/	
+			#main{background:linear-gradient(#2528e9,#4fcbfd); width:570px; height:470px; border-radius:5px; margin:0 auto; position:absolute; top:15px; left:15px;}
+			
+			/* inner영역 띠줄*/
+			#inner{width:100%; height:100%; background:url(images/two_line.png) no-repeat;}
+			
+			/* header영역 로고, 날짜 그랜드오픈*/
+			#header{text-align:center; margin-bottom:10px; position:relative;}
+			
+			h1{background:url(images/logo.png) no-repeat; width:130px; height:90px; text-indent:-9999px; overflow:hidden; float:left; margin:43px 0 0 43px; }
+				
+			h2{float:left; margin:70px 0 0 10px; font-weight:bold; font-size:30px; color:#ffffff;}
+		
+			
+			.grandOpen{ clear:both; position:relative;}
+			.grandOpen>img{padding:10px 0 0 20px;}
+			.grandOpen span{position:absolute;}
+			.grandOpen .one{top:px; left:20px;}
+			.grandOpen .two{top:px; left:315px;}
+			.grandOpen .three{top:40px; left:530px;}
+			
+			/* content영역 음식사진 공고내용 하트사진 버튼 */
+			#content{margin:30px auto; width:490px; height:175px; background:#17e9dd; border-radius:20px; padding:10px 0 0 10px;}
+			
+			.whiteBox { background:#ffffff; border-radius:10px; width:480px; height:165px;}
+			
+			.doubleImages{border-radius:10px; width:480px; height:165px; background:url(images/dish.png) no-repeat 250px -50px/350px, url(images/dish_shadow.png) no-repeat  235px -50px/350px;} 
+		
+			.leftText{padding:15px 20px 15px 15px;}
+			h3{color:red; margin-bottom:10px;}
+			.list li{background:url(images/heart.png) no-repeat left /12px; padding-left:20px; margin-bottom:5px; line-height:150%;}
+			
+			/*버튼*/
+			a.mojip{background:url(images/button.png) no-repeat; display:inline-block; margin-top:10px; width:180px; height:33px; line-height:33px; text-align:center; color:#000000; font-weight:bold; text-decoration:none; /*z-index:3;*/}
+		
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="main">
+				<div id="inner">
+					<div id="header">
+						<h1>로고 이미지</h1>
+						<h2>화곡점 2025년 10월 14일</h2> <!-- '화곡점' 옆에 오늘 날짜를 삽입 -->
+						<div class="grandOpen">
+							<img src="images/open.png" alt="Grand Open"> <!-- grand open 이미지 삽입 -->
+							<span class="one"><img src="images/shine.png" alt="shine1"></span> <!-- shine 이미지 삽입 -->
+							<span class="two"><img src="images/shine.png" alt="shine2"></span> <!-- shine 이미지 삽입 -->
+							<span class="three"><img src="images/shine.png" alt="shine3"></span> <!-- shine 이미지 삽입 -->
+						</div>
+					</div><!-- main inner header 끝 -->
+					
+					<div id="content">
+						<div class="whiteBox">
+							<div class="doubleImages">
+								<div class="leftText">
+									<h3>TGIF에서 함께 할 직원을 모집합니다.</h3>
+									<ul class="list">
+										<li>모집기간 : 2025년 10월 14일~상시채용</li>
+										<li>문의전화 : 02)6958-5870 / FAX : 02)2039-7362</li>
+									</ul>
+									<p><a href="mojip.html" target="_blank" class="mojip">입사지원서 작성하기</a></p> <!-- mojip.html을 새로운 창에 나타날 수 있게 삽입 -->
+								</div>
+							</div>
+						</div>
+					</div><!-- main inner content 끝 -->
+				</div><!-- main inner 끝 -->
+			</div><!-- main 끝 -->
+		</div><!-- wrapper 끝 -->
+	</body>
+</html>
